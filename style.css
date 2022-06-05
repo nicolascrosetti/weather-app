@@ -64,3 +64,13 @@ button {
 input {
   border: 2px solid black;
 }
+.inline-form {
+  display: flex;
+  gap: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .inline-form {
+    flex-direction: column;
+  }
+}
