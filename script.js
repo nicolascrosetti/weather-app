@@ -52,7 +52,7 @@ const convertToFarenheit = function (temperature) {
 const fetchWeather = (location) => {
   // Fetch
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&APPID=83fd2c701afee4edba56d989ac078e0f`,
+    `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&APPID=83fd2c701afee4edba56d989ac078e0f`,
     { mode: 'cors' }
   )
     .then((response) => response.json())
