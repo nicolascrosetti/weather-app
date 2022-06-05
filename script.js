@@ -20,7 +20,7 @@ const processedData = (weatherObject) => {
 const useData = (data) => {
   placeDiv.textContent = data.place;
   temperatureDiv.textContent = data.temperature;
-  placeImage.src = `http://openweathermap.org/img/wn/${data.iconId}@2x.png`;
+  placeImage.src = `https://openweathermap.org/img/wn/${data.iconId}@2x.png`;
 
   if (data.temperature > 22) {
     body.classList.remove('cold');
@@ -52,7 +52,7 @@ const convertToFarenheit = function (temperature) {
 const fetchWeather = (location) => {
   // Fetch
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&APPID=83fd2c701afee4edba56d989ac078e0f`,
+    `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&APPID=83fd2c701afee4edba56d989ac078e0f`,
     { mode: 'cors' }
   )
     .then((response) => response.json())
